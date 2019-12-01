@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Cooparate Landing</title>
+    <meta name="description" content="Article FRUCTCODE.COM. How to send ajax form.">
+    <meta name="author" content="fructcode.com">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Exo:100,400,400i,500&display=swap" rel="stylesheet">
 </head>
@@ -17,7 +19,7 @@
             <a href='#' class="play_icon" id='playIcon'>
                 <img src="img/play.png" alt="">
             </a>
-            <a href='#trynow' class="button" id='button'>TRY NOW</a>
+            <a href='#' class="button" id=''>TRY NOW</a>
             <p class="note">*No need to add cards details</p>
         </div>
     </header>
@@ -146,11 +148,11 @@
                 <h2 class="h2">Over 1000 designers are using<span>...</span></h2>
             </div>
             <div class="trynow_form">
-                <form action="" name="trynow">
+                <form  method="POST" action=" " name="myform" id='myForm'>
                     <input class='form_item' type="text" name="name" placeholder="FULL NAME">
                     <input class='form_item' type="text" name='email' placeholder="YOUR EMAIL">
                     <input class='form_item' type="text" name='password' placeholder="PASSWORD">
-                    <a href="#" class='send_form'>TRY NOW</a>
+                    <input type="button" value="Отправить" class='send_form' id='button'/>
                 </form>
             </div>
             <div class="agreement">By Signing up your agree our 
@@ -210,7 +212,16 @@
             <div class='visual_graphic'></div>
         </div>
     </footer>
-    <script>
+    <div id="result_form">
+        
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src='ajax.js'></script>
+    <script type='text/javascript'>
         var video = document.querySelector('#video');
 
         document.querySelector('#playIcon').addEventListener('click', playVideo);
@@ -234,24 +245,10 @@
             }
         }
 
+/*        function submit(){
+            document.getElementById('myForm').submit();  
+        }*/
+
     </script>
 </body>
 </html>
-
-<!-- 
-function addSourceToVideo(element, src, type) {
-    var source = document.createElement('source');
-
-    source.src = src;
-    source.type = type;
-
-    element.appendChild(source);
-}
-
-var video = document.createElement('video');
-
-document.body.appendChild(video);
-
-addSourceToVideo(video, 'http://upload.wikimedia.org/wikipedia/commons/7/79/Big_Buck_Bunny_small.ogv', 'video/ogg');
-
-video.play(); -->

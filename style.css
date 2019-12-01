@@ -6,7 +6,7 @@ body{
   font-family: 'Exo', sans-serif;
   overflow-x: hidden;
   max-width: 1440px;
-  width: 100%;
+  width: 1440px;
 }
 a{
     text-decoration: none;
@@ -165,8 +165,7 @@ p{
     bottom: -5px;
     right: 75px;
     z-index: 0;
-} 
-
+}
 /* ABOUT US END */
 
 /* FEATURES */
@@ -177,6 +176,7 @@ p{
 .features_layout{
     width: 100%;
     background: url(img/Earphones.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
     padding: 135px 0px 145px;
@@ -435,6 +435,7 @@ span{
     border-radius: 5px;
     background: #ff6d6d;
     padding: 15px 95px;
+    border: none;
 }
 /* TRY NOW END */
 
@@ -542,4 +543,11 @@ h3{
         align-items: center;
         width: 100%;
     }
+}
+
+.result_form{
+    width: 400px;
+    background: grey;
+    margin-top: 40px;
+    margin: 0 auto;
 }
